@@ -114,9 +114,11 @@ samba4repo-7-x86_64.cfg: epel-7-x86_64.cfg
 	@echo '[samba4repo]' >> $@
 	@echo 'name=samba4repo' >> $@
 	@echo 'enabled=1' >> $@
-	@echo 'baseurl=file://$(PWD)/samba4repo/el/7/x86_64/' >> $@
+	@echo 'baseurl=http://localhost/samba4repo/el/7/x86_64/' >> $@
 	@echo 'failovermethod=priority' >> $@
 	@echo 'skip_if_unavailable=False' >> $@
+	@echo 'metadata_expire=3' >> $@
+	@echo 'gpgcheck=0' >> $@
 	@echo '#cost=2000' >> $@
 	@echo '"""' >> $@
 	@uniq -u $@ > $@.out
@@ -131,8 +133,10 @@ samba4repo-8-x86_64.cfg: rhelbeta-8-x86_64.cfg
 	@echo '[samba4repo]' >> $@
 	@echo 'name=samba4repo' >> $@
 	@echo 'enabled=1' >> $@
-	@echo 'baseurl=file://$(PWD)/samba4repo/el/8/x86_64/' >> $@
+	@echo 'baseurl=http://localhost/samba4repo/el/8/x86_64/' >> $@
 	@echo 'failovermethod=priority' >> $@
+	@echo 'metadata_expire=3' >> $@
+	@echo 'gpgcheck=0' >> $@
 	@echo 'skip_if_unavailable=False' >> $@
 	@echo '#cost=2000' >> $@
 	@echo '"""' >> $@
@@ -148,8 +152,10 @@ samba4repo-f29-x86_64.cfg: fedora-29-x86_64.cfg
 	@echo '[samba4repo]' >> $@
 	@echo 'name=samba4repo' >> $@
 	@echo 'enabled=1' >> $@
-	@echo 'baseurl=file://$(PWD)/samba4repo/fedora/29/x86_64/' >> $@
+	@echo 'baseurl=http://localhost/samba4repo/fedora/29/x86_64/' >> $@
 	@echo 'failovermethod=priority' >> $@
+	@echo 'metadata_expire=3' >> $@
+	@echo 'gpgcheck=0' >> $@
 	@echo 'skip_if_unavailable=False' >> $@
 	@echo '#cost=2000' >> $@
 	@echo '"""' >> $@
@@ -165,8 +171,10 @@ samba4repo-rawhide-x86_64.cfg: fedora-rawhide-x86_64.cfg
 	@echo '[samba4repo]' >> $@
 	@echo 'name=samba4repo' >> $@
 	@echo 'enabled=1' >> $@
-	@echo 'baseurl=file://$(PWD)/samba4repo/fedora/rawhide/x86_64/' >> $@
+	@echo 'baseurl=http://localhost/samba4repo/fedora/rawhide/x86_64/' >> $@
 	@echo 'failovermethod=priority' >> $@
+	@echo 'metadata_expire=3' >> $@
+	@echo 'gpgcheck=0' >> $@
 	@echo 'skip_if_unavailable=False' >> $@
 	@echo '#cost=2000' >> $@
 	@echo '"""' >> $@
