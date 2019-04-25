@@ -16,3 +16,9 @@
 	path = libtevent-0.9.x-srpm
 	url = https://github.com/nkadel/libtevent-0.10.x-srpm
 	branch = nkadel-0.9.39
+[submodule "samba-4.9.x-srpm"]
+	path = samba-4.9.x-srpm
+	url = https://github.com/nkadel/samba-4.9.x-srpm
+[submodule "libldb-1.4.x-srpm"]
+	path = libldb-1.4.x-srpm
+	url = https://github.com/nkadel/libldb-1.4.x-srpm
